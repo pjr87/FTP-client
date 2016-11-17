@@ -1,0 +1,227 @@
+2016-10-31.17:09:12 input: 10.0.0.135 mylog 21432
+2016-10-31.17:09:12 Attempting to connect to 10.0.0.135 21432
+2016-10-31.17:09:12 Received reply: 220 Welcome to Phillip Ryan's FTP server
+2016-10-31.17:09:12 Connected to FTP server
+2016-10-31.17:09:15 Sent USER pjr87
+2016-10-31.17:09:15 Received from USER reply: 331 Please specify the password.
+2016-10-31.17:09:15 Sent PASS hw2
+2016-10-31.17:09:15 Received from PASS reply: 230 Login successful.
+2016-10-31.17:09:37 PWD command
+2016-10-31.17:09:37 Sent PWD
+2016-10-31.17:09:37 Received from PWD reply: 257 /Users/phillipryan/Documents/workspace/FTPserver
+2016-10-31.17:09:40 LIST command
+2016-10-31.17:09:40 Sent LIST 
+2016-10-31.17:09:40 Received from LIST reply: 125. .. .cproject .project .settings Debug FTPserver.cpp FTPserver.h log.cpp log.h main.cpp myLog README Socket.cpp Socket.h userPermissions.txt 
+2016-10-31.17:09:45 HELP command
+2016-10-31.17:09:45 Sent HELP 
+2016-10-31.17:09:45 Received from HELP reply: 211 Please refer to README for help
+2016-10-31.17:10:17 EPSV command
+2016-10-31.17:10:17 Sent EPSV 
+2016-10-31.17:10:17 Received from EPSV reply: 229 Entering Extended Passive Mode (|||64073|)
+2016-10-31.17:10:17 Attempting to connect to 10.0.0.135 64073
+2016-10-31.17:10:17 Data port connected to FTP server
+2016-10-31.17:10:37 RETR command
+2016-10-31.17:10:37 Sent RETR userPermissions.txt
+2016-10-31.17:10:37 Received from RETR reply: 500 File does not exist.
+2016-10-31.17:10:50 RETR command
+2016-10-31.17:10:50 Sent RETR main.cpp
+2016-10-31.17:10:50 Received from RETR reply: 500 File does not exist.
+2016-10-31.17:10:55 Quitting ftp client
+2016-10-31.17:11:13 input: 10.0.0.135 mylog 21432
+2016-10-31.17:11:13 Attempting to connect to 10.0.0.135 21432
+2016-10-31.17:11:13 Received reply: 220 Welcome to Phillip Ryan's FTP server
+2016-10-31.17:11:13 Connected to FTP server
+2016-10-31.17:11:16 Sent USER pjr87
+2016-10-31.17:11:16 Received from USER reply: 331 Please specify the password.
+2016-10-31.17:11:16 Sent PASS hw2
+2016-10-31.17:11:16 Received from PASS reply: 230 Login successful.
+2016-10-31.17:11:19 EPSV command
+2016-10-31.17:11:19 Sent EPSV 
+2016-10-31.17:11:19 Received from EPSV reply: 229 Entering Extended Passive Mode (|||64108|)
+2016-10-31.17:11:19 Attempting to connect to 10.0.0.135 64108
+2016-10-31.17:11:19 Data port connected to FTP server
+2016-10-31.17:11:26 RETR command
+2016-10-31.17:11:26 Sent RETR userPermissions.txt
+2016-10-31.17:11:26 Received from RETR reply: 150 Opening BINARY mode data connection for userPermissions.txt (19 bytes).
+2016-10-31.17:11:26 Transfer will begin now
+2016-10-31.17:11:26 Received from file reply: pjr87 hw2
+cs472 h
+2016-10-31.17:11:26 Received from RETR reply: 226 Transfer complete.
+2016-10-31.17:11:26 File transfer complete 226 Transfer complete.
+2016-10-31.17:11:26 File created 
+2016-10-31.17:11:35 Quitting ftp client
+2016-10-31.17:11:41 input: 10.0.0.135 mylog 21432
+2016-10-31.17:11:41 Attempting to connect to 10.0.0.135 21432
+2016-10-31.17:11:41 Received reply: 220 Welcome to Phillip Ryan's FTP server
+2016-10-31.17:11:41 Connected to FTP server
+2016-10-31.17:11:44 Sent USER pjr87
+2016-10-31.17:11:44 Received from USER reply: 331 Please specify the password.
+2016-10-31.17:11:44 Sent PASS hw2
+2016-10-31.17:11:44 Received from PASS reply: 230 Login successful.
+2016-10-31.17:11:46 PASV command
+2016-10-31.17:11:46 Sent PASV
+2016-10-31.17:11:46 Received from PASV reply: 227 Entering Passive Mode (10,0,0,135,250,127)
+2016-10-31.17:11:46 Attempting to connect to 10.0.0.135 64127
+2016-10-31.17:11:46 Data port connected to FTP server
+2016-10-31.17:11:56 RETR command
+2016-10-31.17:11:56 Sent RETR userPermissions.txt
+2016-10-31.17:11:56 Received from RETR reply: 150 Opening BINARY mode data connection for userPermissions.txt (19 bytes).
+2016-10-31.17:11:56 Transfer will begin now
+2016-10-31.17:11:56 Received from file reply: pjr87 hw2
+cs472 hw3mode data c
+2016-10-31.17:11:56 Received from RETR reply: 226 Transfer complete.
+2016-10-31.17:11:56 File transfer complete 226 Transfer complete.
+2016-10-31.17:11:58 File was not created because it already exists
+2016-10-31.17:12:04 Quitting ftp client
+2016-11-10.11:35:51 input: 10.246.251.93 myLog 21
+2016-11-10.11:35:51 Attempting to connect to 10.246.251.93 21
+2016-11-10.11:35:52 Received reply: 220 Welcome to cs472 FTP HW2 service.
+2016-11-10.11:35:52 Connected to FTP server
+2016-11-10.11:35:58 Sent USER cs472
+2016-11-10.11:35:58 Received from USER reply: 331 Please specify the password.
+2016-11-10.11:35:58 Sent PASS hw2
+2016-11-10.11:35:58 Received from PASS reply: 230 Login successful.
+2016-11-10.11:36:06 Error command not recognized
+2016-11-10.11:36:07 HELP command
+2016-11-10.11:36:07 Sent HELP 
+2016-11-10.11:36:07 Received from HELP reply: 214-The following commands are recognized.
+2016-11-10.11:36:14 Error command not recognized
+2016-11-10.11:36:17 LIST command
+2016-11-10.11:36:17 Sent LIST 
+2016-11-10.11:36:17 Received from LIST reply:  ABOR ACCT ALLO APPE CDUP CWD  DELE EPRT EPSV FEAT HELP LIST MDTM MKD
+ MODE NLST NOOP OPTS PASS PASV PORT PWD  QUIT REIN REST RETR RMD  RNFR
+ RNTO SITE SIZE SMNT STAT STOR STOU STRU SYST TYPE USER XCUP XCWD XMKD
+ XPWD XRMD
+214 Help OK.
+2016-11-10.11:36:33 LIST command
+2016-11-10.11:36:33 Sent LIST 
+2016-11-10.11:36:33 Received from LIST reply: 425 Use PORT or PASV first.
+2016-11-10.11:36:37 PASV command
+2016-11-10.11:36:37 Sent PASV
+2016-11-10.11:36:37 Received from PASV reply: 425 Use PORT or PASV first.
+2016-11-10.11:36:37 Error when sending PASV: Undefined error: 0
+2016-11-10.11:36:42 PASV command
+2016-11-10.11:36:42 Sent PASV
+2016-11-10.11:36:42 Received from PASV reply: 227 Entering Passive Mode (10,246,251,93,46,189).
+2016-11-10.11:36:42 Attempting to connect to 10.246.251.93 11965
+2016-11-10.11:36:43 Error when connecting to server: Connection refused
+2016-11-10.11:36:43 Error when connecting to FTP data port: Connection refused
+2016-11-10.11:36:45 LIST command
+2016-11-10.11:36:45 Sent LIST 
+2016-11-10.11:36:45 Received from LIST reply: 227 Entering Passive Mode (10,246,251,93,95,211).
+2016-11-10.11:38:39 input: 10.246.251.93 myLog 12345
+2016-11-10.11:38:39 Attempting to connect to 10.246.251.93 12345
+2016-11-10.11:38:39 Error when connecting to server: Connection refused
+2016-11-10.11:38:39 Error when connecting to FTP server: Connection refused
+2016-11-10.11:38:52 input: 10.246.251.93 myLog 21
+2016-11-10.11:38:52 Attempting to connect to 10.246.251.93 21
+2016-11-10.11:38:53 Received reply: 220 Welcome to cs472 FTP HW2 service.
+2016-11-10.11:38:53 Connected to FTP server
+2016-11-10.11:38:59 Sent USER cs472
+2016-11-10.11:38:59 Received from USER reply: 331 Please specify the password.
+2016-11-10.11:38:59 Sent PASS hw2
+2016-11-10.11:38:59 Received from PASS reply: 230 Login successful.
+2016-11-10.11:39:40 PWD command
+2016-11-10.11:39:40 Sent PWD
+2016-11-10.11:39:40 Received from PWD reply: 257 "/home/cs472" is the current directory
+2016-11-10.11:39:44 CDUP command
+2016-11-10.11:39:44 Sent CDUP
+2016-11-10.11:39:44 Received from CDUP reply: 250 Directory successfully changed.
+2016-11-10.11:39:48 PWD command
+2016-11-10.11:39:48 Sent PWD
+2016-11-10.11:39:48 Received from PWD reply: 257 "/home" is the current directory
+2016-11-10.11:39:56 CWD command
+2016-11-10.11:39:56 Sent CWD LMAO
+2016-11-10.11:39:56 Received from CWD reply: 550 Failed to change directory.
+2016-11-10.11:40:03 CWD command
+2016-11-10.11:40:03 Sent CWD home
+2016-11-10.11:40:03 Received from CWD reply: 550 Failed to change directory.
+2016-11-10.11:40:11 CWD command
+2016-11-10.11:40:11 Sent CWD cs472
+2016-11-10.11:40:11 Received from CWD reply: 250 Directory successfully changed.
+2016-11-10.11:40:13 PWD command
+2016-11-10.11:40:13 Sent PWD
+2016-11-10.11:40:13 Received from PWD reply: 257 "/home/cs472" is the current directory
+2016-11-10.11:40:16 PASV command
+2016-11-10.11:40:16 Sent PASV
+2016-11-10.11:40:16 Received from PASV reply: 227 Entering Passive Mode (10,246,251,93,240,167).
+2016-11-10.11:40:16 Attempting to connect to 10.246.251.93 61607
+2016-11-10.11:40:17 Data port connected to FTP server
+2016-11-10.11:40:21 LIST command
+2016-11-10.11:40:21 Sent LIST 
+2016-11-10.11:40:21 Received from LIST reply: 150 Here comes the directory listing.
+2016-11-10.11:40:31 LIST command
+2016-11-10.11:40:31 Sent LIST 
+2016-11-10.11:40:31 Received from LIST reply: 226 Directory send OK.
+2016-11-10.11:40:51 RETR command
+2016-11-10.11:40:51 Sent RETR welcomemessage.txt
+2016-11-10.11:40:51 Received from RETR reply: 425 Use PORT or PASV first.
+2016-11-10.11:40:54 PASV command
+2016-11-10.11:40:54 Sent PASV
+2016-11-10.11:40:54 Received from PASV reply: 425 Use PORT or PASV first.
+2016-11-10.11:40:54 Error when sending PASV: Undefined error: 0
+2016-11-10.11:41:01 PASV command
+2016-11-10.11:41:01 Sent PASV
+2016-11-10.11:41:01 Received from PASV reply: 227 Entering Passive Mode (10,246,251,93,61,244).
+2016-11-10.11:41:01 Attempting to connect to 10.246.251.93 15860
+2016-11-10.11:41:02 Error when connecting to server: Connection refused
+2016-11-10.11:41:02 Error when connecting to FTP data port: Connection refused
+2016-11-10.11:41:17 input: 10.246.251.93 myLog 21
+2016-11-10.11:41:17 Attempting to connect to 10.246.251.93 21
+2016-11-10.11:41:18 Received reply: 220 Welcome to cs472 FTP HW2 service.
+2016-11-10.11:41:18 Connected to FTP server
+2016-11-10.11:41:24 Sent USER cs472
+2016-11-10.11:41:24 Received from USER reply: 331 Please specify the password.
+2016-11-10.11:41:24 Sent PASS hw2
+2016-11-10.11:41:24 Received from PASS reply: 230 Login successful.
+2016-11-10.11:41:27 PASV command
+2016-11-10.11:41:27 Sent PASV
+2016-11-10.11:41:27 Received from PASV reply: 227 Entering Passive Mode (10,246,251,93,192,94).
+2016-11-10.11:41:27 Attempting to connect to 10.246.251.93 49246
+2016-11-10.11:41:28 Data port connected to FTP server
+2016-11-10.11:41:45 RETR command
+2016-11-10.11:41:45 Sent RETR welcomemessage.txt
+2016-11-10.11:41:45 Received from RETR reply: 150 Opening BINARY mode data connection for welcomemessage.txt (105 bytes).
+2016-11-10.11:41:45 Transfer will begin now
+2016-11-10.11:41:45 Received from file reply: Here is a file which you can send and receive through FTP.
+
+Are you having fun yet?
+
+Professor Mike Kai
+2016-11-10.11:41:45 Received from RETR reply: 226 Transfer complete.
+2016-11-10.11:41:45 File transfer complete 226 Transfer complete.
+2016-11-10.11:41:45 File created 
+2016-11-10.11:41:57 PASV command
+2016-11-10.11:41:57 Sent PASV
+2016-11-10.11:41:57 Received from PASV reply: 227 Entering Passive Mode (10,246,251,93,143,143).
+2016-11-10.11:41:57 Attempting to connect to 10.246.251.93 36751
+2016-11-10.11:41:58 Data port connected to FTP server
+2016-11-10.11:42:07 RETR command
+2016-11-10.11:42:07 Sent RETR hw2.pdf
+2016-11-10.11:42:07 Received from RETR reply: 150 Opening BINARY mode data connection for hw2.pdf (117684 bytes).
+2016-11-10.11:42:07 Transfer will begin now
+2016-11-10.11:42:07 Received from file reply: %PDF-1.5%‚„œ”
+39 0 obj<</Linearized 1/L 117684/O 41/E 84444/N 4/T 117310/H [ 488 270]>>endobj                
+57 0 obj<</DecodeParms<</Columns 4/Predictor 12>>/Filter/FlateDecode/ID[<4F94072943C24A80E231BEE649BBCF5D><A160EE75E4E76F45AF2F2E90AC82D2BB>]/Index[39 28]/Info 38 0 R/Length 85/Prev 117311/Root 40 0 R/Size 67/Type/XRef/W[1 2 1]>>stream
+hﬁbbd``b`z$Å√ ¡R
+‚ˆÇ$ÍÅÛ2KDÄõÄ=ò≥&HÒ5ë$*>ÄLI9ò∂Å∏åàˇå˚~
+2016-11-10.11:42:07 Received from RETR reply: 226 Transfer complete.
+2016-11-10.11:42:07 File transfer complete 226 Transfer complete.
+2016-11-10.11:42:07 File created 
+2016-11-10.11:42:17 PASV command
+2016-11-10.11:42:17 Sent PASV
+2016-11-10.11:42:17 Received from PASV reply: 227 Entering Passive Mode (10,246,251,93,121,222).
+2016-11-10.11:42:17 Attempting to connect to 10.246.251.93 31198
+2016-11-10.11:42:18 Data port connected to FTP server
+2016-11-10.11:42:22 RETR command
+2016-11-10.11:42:22 Sent RETR hw2.pdf
+2016-11-10.11:42:22 Received from RETR reply: 150 Opening BINARY mode data connection for hw2.pdf (117684 bytes).
+2016-11-10.11:42:22 Transfer will begin now
+2016-11-10.11:42:22 Received from file reply: %PDF-1.5%‚„œ”
+39 0 obj<</Linearized 1/L 117684/O 41/E 84444/N 4/T 117310/H [ 488 270]>>endobj                
+57 0 obj<</DecodeParms<</Columns 4/Predictor 12>>/Filter/FlateDecode/ID[<4F94072943C24A80E231BEE649BBCF5D><A160EE75E4E76F45AF2F2E90AC82D2BB>]/Index[39 28]/Info 38 0 R/Length 85/Prev 117311/Root 40 0 R/Size 67/Type/XRef/W[1 2 1]>>stream
+hﬁbbd``b`z$Å√ ¡R
+‚ˆÇ$ÍÅÛ2KDÄõÄ=ò≥&HÒ5ë$*>ÄLI9ò∂Å∏åàˇå˚~
+2016-11-10.11:42:22 Received from RETR reply: 226 Transfer complete.
+2016-11-10.11:42:22 File transfer complete 226 Transfer complete.
+2016-11-10.11:42:25 File was not created because it already exists

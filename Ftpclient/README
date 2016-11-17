@@ -1,0 +1,56 @@
+Phillip Ryan
+CS 472
+HW 4 - FTP server improvements
+11-14-16
+
+Questions:
+1. Part of providing security for an applicaiton entails that you are proactive. To expose an attack or indentify the damage
+cause analyzing the log events from the application helps to understand what tranpires while someone is using the client
+or server application. Being able to see the neccesary information that relates to the FTP process can be instrumental 
+in finding out the cause and way to fix an attack. 
+
+2. When two proccesses attemt to read or write to a file at theh same time an error can be thrown that the file is 
+not avaialable because another process is using that file and cannot be opened. There are several ways to implement 
+a system of concurrent logging and it depends on what the application is most responsible for. For example
+you could implement a system of locks that only allow a single process to be using the file at once, however
+this could put the server into a wait pattern where logging makes the server process commands very slowly. If speed
+was a higher priority each of the threads could log to its own log file and then upon closer of the connection
+the log file can be sorted and concatenated to a master log file, this process takes more space but should prevent
+servers from processing logs slowly in large numbers of threads are trying to write to a single log. 
+
+3. To start let me exlain port and pasv mode. Port mode conversation: two connections are established, and outbound
+and inbound connection. Pasv mode conversation: the client initiates all connections, the server needs to create a new
+connection back to the client. PASV-mode connections are a more preferred mode because the server does not need to create a
+new inbound connection to the client. With port mode the firewall needs to allow both inbound and outbound connections.
+This results in a wide range of ports being opened to others who may attempt to break the system. While PORT mode has
+been around longer, PASV mode allows firewalls to be better configured with secruty in mind. PORT allows for an exploit
+where a attacker is able to use PORT to request access to ports indirectly though the use of a victim machine as a middle
+man.
+
+4. Implicit is ideal if you really want full encryption for th entire FTP connection from the start of the application. Since 
+encryption always consumes more bandwidth and resources, there may be times when encrypting only one channel is ideal. 
+For instance if the files that are used dont contain confidential information then the only things that should be encrypted
+are the usernames and passwords. Since the user names and passwords are sent via the command channel then that's the only 
+channel that should be encrytped. But implicit mode will always encrypt both channels. For the situation described above,
+explcit mode is preferred because it allows somone to choose which channel to encrypt. This mode even allows to choose 
+not to do encrpytion because it runs over port 21 as opposed to implicit mode which runs at port 990 by default. So in summary
+explicit SSL is better when none secure data files are sent and when resources usage is a concern, where implicit SSL is best
+when confidential files are sent and received and resource usage is not as much of a concern. 
+
+5. One of the main reasons why the 3 person method is so insecure is because the three parties have no way of identifying
+if the person that who is supposed to be the receiver and sender are actually who they are supposed to be. In the 3 person
+system someone can be pointed to any other server to establish a connection and there is no guarentee that the server is who
+was intended to be sent to. In the PORT or PASV commands it would be helpful to identify the data connection with a user and 
+password authentication system that would help to verify that the person you are talking to is the expected person. 
+
+5 EXTRA CREDIT. SFTP is a termial program that encrpyts the files that are sent and received. SFTP is a secure form of ftp,
+without SFTP anyone can search through the packets and see the information being sent and received including authentication.
+SFTP makes cracking the server much more diffucult. SFTP may not be the best soultion when system resources are a concern, 
+however plain FTP should only be used when the network is always trusted. FTP is a client-server model while Bittorrent
+is a peer-to-peer model. With FTP the download and upload speed is limited to that of the server's connection. BitTorrent
+takes advantage of each peer's ability to upload and download content from multiple sources increasing the speed of a
+transfer. BitTorrent is usefule for larger scale content delivery systems where each peer can share a file or group of files
+much easier rather then having to rely of a single server. BitTorrent is bad because if it is used on a non-trusted network then
+files that are harmful to peer's computers could be downloaded. 
+
+6. FTP is vulnera

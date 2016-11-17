@@ -1,0 +1,75 @@
+Phillip Ryan
+CS 472
+FTP client
+10-17-16
+
+Objective:
+This is an FTP client implemented to the following rfcs:
+
+https://www.rfc-editor.org/rfc/pdfrfc/rfc959.txt.pdf
+https://www.rfc-editor.org/rfc/pdfrfc/rfc2428.txt.pdf
+
+About the code:
+The code was compiled on Eclipse (neon) using the c++ SDK. To see example run commands please see below, 
+the corresponding execution log file output is attached in this assignment as myLog.
+
+This code was built on MAC version 10.12.1 with Elcipse Version: Neon.1a Release (4.6.1). And has not 
+been tested anywhere else, the compilation or running of this program is not supported anywhere 
+else but what is described here.
+
+The toolchain that was used comes with Eclipse, no external cross-compiler was loaded. The name of
+this toolchain in Eclipse is MACOSX GCC. This contains the compiler, linker, assembler.
+
+Here are the tools eclipse listed as used by MACOSX GCC toolchain:
+MacOS X C Linker
+MacOS X C++ Linker
+GCC Assembler
+GCC Archiver
+GCC C++ Compiler
+GCC C Compiler
+
+Eclipse:
+Eclipse IDE for C/C++ Developers
+
+Version: Neon.1a Release (4.6.1)
+Build id: 20161007-1200
+
+This project and the examples below were run from eclipse, described above. In order to load this project
+please follow these steps:
+1. Open Eclipse version and SDK described above.
+2. Go to File -> Import -> General -> Existing Projects into Workspace
+3. Unzip the file which contains this project
+4. Select root director as the project folder which appeared after unzip (should be FTPserver)
+5. Hit Finish
+6. Select the project folder in the Project Explorer
+7. Right click and hit Build Project
+8. After the project is built it can be run
+9. Go to Run -> Run configurations
+10. Right click C/C++ application -> New
+11. Select the project that was just loaded into this workspace
+12. The project will be run as Debug, if another version is required please re-compile with appropriate options
+(i.e Debug/FTPserver)
+13. Edit the Arguments tab to include log file name and port number
+(i.e. server.conf)
+14. To run select the dropdown next to the green play button and choose the run configuration you just choose
+15. This process will only run a server, it is up to the user to select and run the proper clients
+
+This client was tested on MAC OSX 
+
+The client only requires commandline options to be passed into it. Address and logfile name required. Port optional
+
+Required ex (127.0.0.1 myLog)
+Required ex (127.0.0.1 myLog 12345)
+
+The log file for the FTP client is named mylog.
+
+Please don't hesitate to contact me if there are any issues. pjr87@drexel.edu
+
+Example of some commands:
+PASV
+PORT 144.118.65.204 12345
+EPRT 1 144.118.65.204 12345
+RETR welcomemessage.txt
+PWD
+CDUP
+...
